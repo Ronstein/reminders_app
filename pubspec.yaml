@@ -1,0 +1,41 @@
+name: reminders_app
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  cloud_firestore: ^4.17.5
+  cupertino_icons: ^1.0.6
+  firebase_auth: ^4.19.4
+  firebase_core: ^2.30.1
+  firebase_crashlytics: ^3.5.5
+  flutter:
+    sdk: flutter
+  flutter_local_notifications: ^17.2.1
+  flutter_riverpod: ^2.5.1
+  go_router: ^16.2.4
+  google_fonts: ^6.3.2
+  intl: ^0.18.1
+  rrule: ^0.2.17
+  shared_preferences: ^2.2.2
+  timezone: ^0.9.4
+  uuid: ^4.4.0
+
+dev_dependencies:
+  change_app_package_name: ^1.5.0
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: MontserratAlternates
+      fonts:
+        - asset: assets/fonts/MontserratAlternates-Regular.ttf
+        - asset: assets/fonts/MontserratAlternates-Medium.ttf
+        - asset: assets/fonts/MontserratAlternates-SemiBold.ttf
+        - asset: assets/fonts/MontserratAlternates-Bold.ttf

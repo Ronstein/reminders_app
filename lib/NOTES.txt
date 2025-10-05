@@ -1,0 +1,4 @@
+Notas rápidas:
+- Firebase: generar firebase_options.dart con FlutterFire CLI y setear Environment.useFirebase = true.
+- Notificaciones: configurar AndroidManifest e Info.plist.
+- RRule: helpers en core/utils/date_utils.dart
