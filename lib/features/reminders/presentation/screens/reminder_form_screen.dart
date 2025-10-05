@@ -172,7 +172,9 @@ class _ReminderFormScreenState extends ConsumerState<ReminderFormScreen> {
                   await notifier.addReminder(newReminder);
                   reminderToNotify = newReminder;
                 }
-
+              
+              final now = DateTime.now();
+              if (reminderToNotify.dateTime.isAfter(now)) {
                 // Programar notificación local
                 await NotificationService().scheduleReminder(
                   id: reminderToNotify.id.hashCode,
@@ -181,6 +183,7 @@ class _ReminderFormScreenState extends ConsumerState<ReminderFormScreen> {
                   scheduledDate: reminderToNotify.dateTime,
                   payload: reminderToNotify.id.toString(),
                 );
+              }
 
                 if (context.mounted) context.pop();
               },
